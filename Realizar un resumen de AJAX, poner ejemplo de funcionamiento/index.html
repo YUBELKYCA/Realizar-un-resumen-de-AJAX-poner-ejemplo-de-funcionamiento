@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Archivos Ajax</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>¿ Qué es AJAX?</h1>
+        <h3> San Isidro,Bonao R.D Jueves 16/05/2024
+             
+            YUBELKY CASTILLO 100432277
+        </h3>
+        <article>
+            <p>
+                AJAX, o Asynchronous JavaScript and XML, es una tecnología que permite realizar solicitudes a un
+                servidor web y recibir datos en segundo plano, sin necesidad de recargar toda la página. Es una técnica
+                fundamental para el desarrollo web moderno y se utiliza para mejorar la experiencia del usuario al
+                permitir interacciones más dinámicas y rápidas en las páginas web.
+            </p>
+
+            <p>
+                Antes de AJAX, las interacciones en una página web a menudo implicaban recargar la página completa cada
+                vez que se enviaba una solicitud al servidor. Con AJAX, es posible realizar solicitudes al servidor y
+                actualizar solo partes específicas de la página, lo que resulta en una experiencia de usuario más fluida
+                y rápida.
+            </p>
+            <h2>Las características clave de AJAX incluyen:</h2>
+
+            <p>
+                <b> Asincronía: </b>Las solicitudes AJAX son asincrónicas, lo que significa que se pueden realizar en
+                segundo plano sin bloquear la ejecución del código JavaScript. Esto permite que la página web
+                siga siendo altamente interactiva mientras espera la respuesta del servidor.
+                <br><br>
+                <b>Solicitudes HTTP:</b>
+                AJAX utiliza el objeto XMLHttpRequest o la API Fetch para realizar solicitudes HTTP asíncronas
+                al servidor. Puede recuperar datos en formatos como XML, JSON o texto simple.
+                <br><br>
+                <b> Manipulación del
+                    DOM: </b>Después de recibir la respuesta del servidor, el código JavaScript puede manipular
+                el
+                DOM
+                para actualizar partes específicas de la página, lo que permite una interfaz de usuario
+                dinámica. Sin recarga de página: La capacidad de cargar o enviar datos al servidor sin tener que
+                recargar la página completa es una de las ventajas más significativas de AJAX. Esto mejora la
+                velocidad de carga y la eficiencia general de la aplicación web.
+            </p>
+        </article>
+        <p>Ejemplo de Utilizar Ajax</p>
+    </div>
+
+    <div class="ejemplo" id="form-container">
+        <form id="form-Inicio">
+            <fieldset>
+                <legend>Formulario de Inscripción</legend>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+            </fieldset>
+        </form>
+        <p id="mensaje"></p>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+
+</html>
